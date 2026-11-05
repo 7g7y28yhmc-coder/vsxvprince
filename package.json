@@ -1,0 +1,35 @@
+{
+  "name": "vsxvprince-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "VSXVPRINCE — сайт артиста с анимациями на Remotion",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "studio": "remotion studio",
+    "render:hero": "remotion render HeroIntro out/hero.mp4",
+    "render:tour": "remotion render TourPromo out/tour.mp4",
+    "render:merch": "remotion render MerchReel out/merch.mp4",
+    "render:story": "remotion render TourStory out/story.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.541",
+    "@remotion/google-fonts": "4.0.541",
+    "@remotion/player": "4.0.541",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.541"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@vitejs/plugin-react": "6.2.1",
+    "typescript": "5.9.3",
+    "vite": "8.3.6"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true
+  }
+}
